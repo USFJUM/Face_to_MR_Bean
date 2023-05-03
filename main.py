@@ -26,7 +26,7 @@ while True:
                 #cv2.rectangle(frame, (x,y), (x+w,y+h), (0,255,0), 3)
                 
                 cv2.imshow('Face Detector', frame)
-                #cv2.imshow('Face Detector2', kimso)
+
                 c = cv2.waitKey(1)
         #if c == 27:
                 # break

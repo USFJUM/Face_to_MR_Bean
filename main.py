@@ -21,6 +21,7 @@ while True:
         for (x,y,w,h) in face_rects:
                 print('OK>>>','x=',x,'y=',y,'(h*w)/10=',int((h*w)/5000))
                 KMS=cv2.imread('image1.jpg')
+                KMS=KMS[7:180,40:170,:]
                 KMS=cv2.resize(KMS,(w,h+50))
                 frame[y:y+h+50,x:x+w,:]=KMS
                 #cv2.rectangle(frame, (x,y), (x+w,y+h), (0,255,0), 3)
